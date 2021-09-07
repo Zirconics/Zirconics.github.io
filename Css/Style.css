@@ -1,0 +1,45 @@
+/*
+Home page
+*/
+section.page-front{
+    padding: 60px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+
+/*
+About page
+*/
+section.summary {
+    padding: 50px;
+    
+}
+
+section.content {
+    padding: 40px;
+}
+
+ul.Summary li {
+    list-style: none; 
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 5px;
+}
+
+ul.Summary a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+ul.Summary a:hover {
+    color: rgb(185, 185, 185);
+    transition: 0.3s;
+}
+
+
