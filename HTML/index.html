@@ -1,75 +1,223 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="../Css/Style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/Style.css" />
 
     <title>HZ preparation assignment first week</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- navbar -->
     <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-        <div class="container-xxl">
+      <div class="container-xxl">
+        <!-- Page title / brand -->>
+        <a href="index.html" class="navbar-brand">
+          <span class="text-secondary fw-bold"> HZ: preparation </span>
+        </a>
 
-            <!-- Page title / brand -->>
-            <a href="index.html" class="navbar-brand">
-                <span class="text-secondary fw-bold">
-                    HZ: preparation
-                </span>
-            </a>
+        <!-- collapsed navbar button (mobile) -->>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- collapsed navbar button (mobile) -->>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navbar links -->>
-            <div class="collapse navbar-collapse justify-content-start align-center" id="main-nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Team.html">Team</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Navbar links -->>
+        <div
+          class="collapse navbar-collapse justify-content-start align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Faq.html">FaQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-    <section id="page-front" class="page-front"> 
-        <div class="container-lg">
-            <div class="row g-4 justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2"> preparation for first assignment</div>
-                    </h1>
-                    <p class="lead my-4 text-muted"> A simple website made with bootstrap 5.</p>
-                    <a href="About.html" class="btn btn-secondary btn-lg"> More information </a>
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <a href="https://hz.nl/">
-                        <img src="/Assets/hz_logo.jpg" class="img-fluid" alt="picture">
-                    </a>
-                    
-                </div>
+    <main>
+      <div class="carousel">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../Assets/hz_logo.jpg"
+                width="auto"
+                height="500px"
+                class="d-block w-100"
+                alt="hz logo"
+              />
             </div>
+            <div class="carousel-item">
+              <img
+                src="../Assets/hz_building.jpeg"
+                width="auto"
+                height="500px"
+                class="d-block w-100"
+                alt="hz building"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../Assets/hz_building.jpeg"
+                width="auto"
+                height="500px"
+                class="d-block w-100"
+                alt="hz building"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-    </section>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
+      <section id="frontpage-paragraph1" class="frontpage-paragraph1">
+        <div class="container-lg">
+          <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+              <h1>
+                <div class="display-2">HBO-ICT</div>
+              </h1>
+              <p class="lead my-4 text-muted">
+                We leven in een connected wereld waarin fysieke voorwerpen massaal worden gekoppeld aan het internet. Denk aan een bewakingscamera die een bericht stuurt naar je smartphone als er een persoon door je tuin loopt. Of aan AI (artificial intelligence) waarbij een zelflerend algoritme leert of het veilig is om een straat over te steken. ICT is het vakgebied dat deze ontwikkelingen mogelijk maakt en creëert.
+                </p>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <a href="https://hz.nl/">
+                <img
+                  src="/Assets/hz_logo.jpg"
+                  class="img-fluid"
+                  alt="picture"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section id="frontpage-paragraph2" class="frontpage-paragraph2">
+        <div class="container-lg">
+          <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+              <a href="https://hz.nl/">
+                <img
+                  src="/Assets/hz_logo.jpg"
+                  class="img-fluid"
+                  alt="picture"
+                />
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <h1>
+                <div class="display-2">Lorem Impsum</div>
+              </h1>
+              <p class="lead my-4 text-muted">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis sit amet dolor vel facilisis. Integer vulputate tristique tristique. Vivamus consectetur semper tristique. Integer in lectus id orci fermentum porta at non metus. Pellentesque convallis enim ut porta egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam tempor elit eget cursus posuere. Aenean interdum viverra justo, at volutpat odio porttitor eu. Curabitur at risus et ipsum auctor accumsan. Donec efficitur aliquet ultricies.
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="page-front" class="page-front">
+        <div class="container-lg">
+          <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+              <h1>
+                <div class="display-2">preparation for first assignment</div>
+              </h1>
+              <p class="lead my-4 text-muted">
+                A simple website made with bootstrap 5.
+              </p>
+              <a href="About.html" class="btn btn-secondary btn-lg">
+                More information
+              </a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <a href="https://hz.nl/">
+                <img
+                  src="/Assets/hz_logo.jpg"
+                  class="img-fluid"
+                  alt="picture"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

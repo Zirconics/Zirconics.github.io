@@ -1,15 +1,15 @@
 /*
 Home page
 */
-section.page-front{
+
+main > section.page-front{
     padding: 60px;
 }
 
-img {
-    border: 1px solid #ddd;
-    border-radius: 25px;
+main > div.carousel {
+    max-height: 500px;
+    padding-bottom: 40px;
 }
-
 
 /*
 About page
