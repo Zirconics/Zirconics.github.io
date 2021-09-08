@@ -11,6 +11,10 @@ main > div.carousel {
     padding-bottom: 40px;
 }
 
+.ListOfItems {
+    padding: 60px;
+}
+
 /*
 About page
 */
