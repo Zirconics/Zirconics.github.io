@@ -1,7 +1,4 @@
-/*
-Home page
-*/
-
+/* Home page */
 main > section.page-front{
     padding: 60px;
 }
@@ -15,9 +12,7 @@ main > div.carousel {
     padding: 60px;
 }
 
-/*
-About page
-*/
+/* About page */
 section.summary {
     padding: 50px;
     
