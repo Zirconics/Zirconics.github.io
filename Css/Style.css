@@ -1,3 +1,7 @@
+body {
+    background-color: #585858;
+}
+
 /* Home page */
 main > section.page-front{
     padding: 60px;
@@ -20,6 +24,50 @@ main > div.carousel {
 .homeTitle:hover {
     color: #c7c8c9;
     transition: 0.15s;
+}
+
+p.text-white {
+    color: white;
+    text-align: start;
+}
+
+div.h1-white-bold {
+    text-align: start;
+    color: white;   
+}
+
+img.bordered-img {
+    border: white solid 2px;
+    height: 300px;
+    width: auto;
+    -webkit-border-radius: 90px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius: 90px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-radius: 90px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img.bordered-img-reversed {
+    border: white solid 2px;
+    height: 300px;
+    width: auto;
+    -webkit-border-radius: 10px;
+    -webkit-border-top-left-radius: 90px;
+    -webkit-border-bottom-right-radius: 90px;
+    -moz-border-radius: 10px;
+    -moz-border-radius-topleft: 90px;
+    -moz-border-radius-bottomright: 90px;
+    border-radius: 10px;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+
+.front-page-paragraph {
+    padding-top: 20px;
 }
 
 /* About page */
@@ -51,4 +99,46 @@ ul.Summary a:hover {
     transition: 0.3s;
 }
 
+/* Dashboard page */
+.dashboardContent {
+    padding-top: 40px;
+}
+
+div.dark-Sidenav {
+    background-color: #212529;
+    color: white;
+    border-radius: 30px;
+}
+
+ul.sidenav-links {
+    align-content: center;
+}
+
+ul.sidenav-links > li.sidenav-item:not(:last-child) { 
+    margin-top: 3px;
+    margin-bottom: 3px;  
+ }
+
+ul.sidenav-links > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+ul.sidenav-links li{
+    list-style: none;
+}
+
+ul.sidenav-links > li > a:hover {
+    color: aqua;
+    transition: 0.6s;
+}
+
+.curriculumTables {
+    background-color: rgb(204, 204, 204);
+}
+
+.table {
+    margin-bottom: 0;
+}
 
