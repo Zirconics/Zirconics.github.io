@@ -70,6 +70,14 @@ img.bordered-img-reversed {
     padding-top: 20px;
 }
 
+.frontpage-paragraph1 {
+    margin-bottom: 30px;
+}
+
+hr {
+    background-color: white; height: 1px; border: 0; 
+}
+
 /* About page */
 section.summary {
     padding: 50px;
