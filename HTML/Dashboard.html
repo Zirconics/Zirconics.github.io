@@ -93,8 +93,15 @@
             <div class="col-lg-8 justify-content-end">
               <div class="curriculumTables">
 
+                <select onchange="show(value)" id="tableSelection">
+                  <option value='Quartile1'>Quartile 1</option>
+                  <option value='Quartile2'>Quartile 2</option>
+                  <option value='Quartile3'>Quartile 3</option>
+                  <option value='Quartile4'>Quartile 4</option>
+                  </select>
+
                 <div class="quartileOne">
-                  <table class="table">
+                  <table class="table" id="Quartile1">
                                   <thead class="table-dark">
                                     <tr>
                                       <th scope="col">Courses in Quartile 1</th>
@@ -123,7 +130,7 @@
                 </div>
   
                 <div class="quartileTwo">
-                  <table class="table">
+                  <table class="table" id="Quartile2" style="display: none;">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Courses in Quartile 2</th>
@@ -152,7 +159,7 @@
                 </div>
   
                 <div class="quartileThree">
-                  <table class="table">
+                  <table class="table" id="Quartile3" style="display: none;">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Courses in Quartile 3</th>
@@ -181,7 +188,7 @@
                 </div>
   
                 <div class="quartileFour">
-                  <table class="table">
+                  <table class="table" id="Quartile4" style="display: none;">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Courses in Quartile 4</th>
@@ -223,5 +230,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="/JS/changeTable.js"></script>
   </body>
 </html>
