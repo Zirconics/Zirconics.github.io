@@ -232,6 +232,11 @@ ul.sidenav-links > li > a:hover {
     margin-bottom: 0;
 }
 
+.drpdwnTableSelection {
+    margin: 10px;
+    border-radius: 10px;
+}
+
 /*
 .spin {
     width: 100px;

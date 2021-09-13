@@ -21,7 +21,7 @@
       <div class="container-xxl">
         <!-- Page title / brand -->
         <a href="index.html" class="navbar-brand">
-          <img src="../Assets/logoHZ.png" alt="logo hz">
+          <img src="../Assets/logoHZ.png" alt="logo hz" />
         </a>
 
         <!-- collapsed navbar button (mobile) -->
@@ -61,165 +61,199 @@
     </nav>
 
     <main>
-
-
       <div class="dashboardContent">
         <div class="container">
           <div class="row g-4">
-
             <!-- side navbar dashboard -->
             <div class="dark-Sidenav col-lg-2 d-none d-lg-block">
               <span class="sidenav-title">List of handy links</span>
               <div>
                 <ul class="sidenav-links">
-                <li class="sidenav-item">
-                  <a href="https://github.com/Zirconics">「Github」</a>
-                </li >
-                <li class="sidenav-item">
-                  <a href="https://portal.hz.nl/">「MyHZ」</a>
-                </li>
-                <li class="sidenav-item">
-                  <a href="https://learn.hz.nl/my/">「HZ Learn」</a>
-                </li>
-              </ul>
+                  <li class="sidenav-item">
+                    <a href="https://github.com/Zirconics">「Github」</a>
+                  </li>
+                  <li class="sidenav-item">
+                    <a href="https://portal.hz.nl/">「MyHZ」</a>
+                  </li>
+                  <li class="sidenav-item">
+                    <a href="https://learn.hz.nl/my/">「HZ Learn」</a>
+                  </li>
+                </ul>
               </div>
-              
             </div>
 
             <!-- filler columns -->
-            <div class="col-lg-2">
-            </div>
-            
+            <div class="col-lg-2"></div>
+
             <div class="col-lg-8 justify-content-end">
+
+              <select onchange="show(value)" id="tableSelection" class="drpdwnTableSelection">
+                <option value="Quartile1">Quartile 1</option>
+                <option value="Quartile2">Quartile 2</option>
+                <option value="Quartile3">Quartile 3</option>
+                <option value="Quartile4">Quartile 4</option>
+                <option value="Other">Somewhere during year 1</option>
+              </select>
+
               <div class="curriculumTables">
-
-                <select onchange="show(value)" id="tableSelection">
-                  <option value='Quartile1'>Quartile 1</option>
-                  <option value='Quartile2'>Quartile 2</option>
-                  <option value='Quartile3'>Quartile 3</option>
-                  <option value='Quartile4'>Quartile 4</option>
-                  </select>
-
+                
                 <div class="quartileOne">
                   <table class="table" id="Quartile1">
-                                  <thead class="table-dark">
-                                    <tr>
-                                      <th scope="col">Courses in Quartile 1</th>
-                                      <th scope="col">Mark</th>
-                                      <th scope="col">EC</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>PCO</td>
-                                      <td>n.v.t</td>
-                                      <td>?</td>
-                                    </tr>
-                                    <tr>
-                                      <td>Programming Basics</td>
-                                      <td>?</td>
-                                      <td>?</td>
-                                    </tr>
-                                    <tr>
-                                      <td>HZ Personality</td>
-                                      <td>?</td>
-                                      <td>?</td>
-                                    </tr>
-                                  </tbody>
-                                </table>
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Courses in Quartile 1</th>
+                        <th scope="col">EC</th>
+                        <th scope="col">Exam</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Program & Career Orientation</td>
+                        <td>2,5</td>
+                        <td>Assessment</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Computer Science Basics</td>
+                        <td>5</td>
+                        <td>Case Study</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Programming Basics</td>
+                        <td>5</td>
+                        <td>Case Study</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-  
+
                 <div class="quartileTwo">
-                  <table class="table" id="Quartile2" style="display: none;">
+                  <table class="table" id="Quartile2" style="display: none">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Courses in Quartile 2</th>
-                        <th scope="col">Mark</th>
                         <th scope="col">EC</th>
+                        <th scope="col">Exam</th>
+                        <th scope="col">Grade</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>PCO</td>
-                        <td>n.v.t</td>
-                        <td>?</td>
+                        <td rowspan="2">Object Oriented Programmming</td>
+                        <td rowspan="2">10</td>
+                        <td>Case Study</td>
+                        <td>0</td>
                       </tr>
                       <tr>
-                        <td>Programming Basics</td>
-                        <td>?</td>
-                        <td>?</td>
-                      </tr>
-                      <tr>
-                        <td>HZ Personality</td>
-                        <td>?</td>
-                        <td>?</td>
+                        <td>Project</td>
+                        <td>0</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-  
+
                 <div class="quartileThree">
-                  <table class="table" id="Quartile3" style="display: none;">
+                  <table class="table" id="Quartile3" style="display: none">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Courses in Quartile 3</th>
-                        <th scope="col">Mark</th>
                         <th scope="col">EC</th>
+                        <th scope="col">Exam</th>
+                        <th scope="col">Grade</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>PCO</td>
-                        <td>n.v.t</td>
-                        <td>?</td>
+                        <td>Framework Development 1</td>
+                        <td>5</td>
+                        <td>Case Study</td>
+                        <td>0</td>
                       </tr>
                       <tr>
-                        <td>Programming Basics</td>
-                        <td>?</td>
-                        <td>?</td>
+                        <td rowspan="3">Framework Project 1</td>
+                        <td rowspan="3">7,5</td>
+                        <td>Project</td>
+                        <td>0</td>
                       </tr>
                       <tr>
-                        <td>HZ Personality</td>
-                        <td>?</td>
-                        <td>?</td>
+                        <td>Assessment</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Report</td>
+                        <td>0</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-  
+
                 <div class="quartileFour">
-                  <table class="table" id="Quartile4" style="display: none;">
+                  <table class="table" id="Quartile4" style="display: none">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Courses in Quartile 4</th>
-                        <th scope="col">Mark</th>
                         <th scope="col">EC</th>
+                        <th scope="col">Exam</th>
+                        <th scope="col">Grade</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>PCO</td>
-                        <td>n.v.t</td>
-                        <td>?</td>
+                        <td rowspan="3">Framework Project 2</td>
+                        <td rowspan="3">10</td>
+                        <td>Portfolio</td>
+                        <td>0</td>
                       </tr>
                       <tr>
-                        <td>Programming Basics</td>
-                        <td>?</td>
-                        <td>?</td>
+                        <td>Project</td>
+                        <td>0</td>
                       </tr>
                       <tr>
-                        <td>HZ Personality</td>
-                        <td>?</td>
-                        <td>?</td>
+                        <td>Assessment</td>
+                        <td>0</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
 
+                <div class="Other">
+                  <table class="table" id="Other" style="display: none;">
+                    <thead class="table-dark">
+                      <tr>
+                        <th scope="col">Somewhere during first year</th>
+                        <th scope="col">EC</th>
+                        <th scope="col">Exam</th>
+                        <th scope="col">Grade</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Personality 1</td>
+                        <td>1,25</td>
+                        <td>?</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Personality 2</td>
+                        <td>1,25</td>
+                        <td>?</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Personal Professional Development</td>
+                        <td>?</td>
+                        <td>?</td>
+                        <td>0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
