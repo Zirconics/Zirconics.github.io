@@ -282,6 +282,7 @@ ul.sidenav-links > li > a:hover {
 
 .profile {
     padding-top: 120px;
+    padding-bottom: 80px;
 }
 
 .profile-picture {
@@ -312,5 +313,10 @@ ul.sidenav-links > li > a:hover {
 .profile-text-smaller {
     color: white;
     font-size: 20px;
+}
+
+.profile-row {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
