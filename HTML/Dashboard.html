@@ -61,6 +61,18 @@
     </nav>
 
     <main>
+      
+      <!-- Big title of FaQ page-->
+      <div class="faq-title">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <h1 id="faq-title-text">FaQ</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="dashboardContent">
         <div class="container">
           <div class="row g-4">
@@ -86,8 +98,11 @@
             <div class="col-lg-2"></div>
 
             <div class="col-lg-8 justify-content-end">
-
-              <select onchange="show(value)" id="tableSelection" class="drpdwnTableSelection">
+              <select
+                onchange="show(value)"
+                id="tableSelection"
+                class="drpdwnTableSelection"
+              >
                 <option value="Quartile1">Quartile 1</option>
                 <option value="Quartile2">Quartile 2</option>
                 <option value="Quartile3">Quartile 3</option>
@@ -96,7 +111,6 @@
               </select>
 
               <div class="curriculumTables">
-                
                 <div class="quartileOne">
                   <table class="table" id="Quartile1">
                     <thead class="table-dark">
@@ -220,7 +234,7 @@
                 </div>
 
                 <div class="Other">
-                  <table class="table" id="Other" style="display: none;">
+                  <table class="table" id="Other" style="display: none">
                     <thead class="table-dark">
                       <tr>
                         <th scope="col">Somewhere during first year</th>
@@ -250,7 +264,6 @@
                       </tr>
                     </tbody>
                   </table>
-
                 </div>
               </div>
             </div>
