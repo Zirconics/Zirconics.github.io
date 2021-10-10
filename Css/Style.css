@@ -60,7 +60,7 @@ p.text-white {
     text-align: start;
 }
 
-div.h1-white-bold {
+.h1-white-bold {
     text-align: start;
     color: white;   
 }
@@ -211,8 +211,8 @@ ul.sidenav-links {
 }
 
 ul.sidenav-links > li.sidenav-item:not(:last-child) { 
-    margin-top: 3px;
-    margin-bottom: 3px;  
+    margin-top: 5px;
+    margin-bottom: 5px;  
  }
 
 ul.sidenav-links > li > a {
@@ -257,6 +257,10 @@ ul.sidenav-links > li > a:hover {
 #dashboard-subtext {
     font-size: 24px;
     color: white;
+}
+
+.progress-bar-marker {
+    background-image: linear-gradient(90deg,rgba(225,225,225,0.1) 99%,rgba(204,0,0,1) 1%);
 }
 
 /* Frequently Asked Questions */
