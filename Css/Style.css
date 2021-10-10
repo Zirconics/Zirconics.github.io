@@ -327,3 +327,7 @@ ul.sidenav-links > li > a:hover {
     margin-bottom: 5px;
 }
 
+.highlighted {
+    color: white !important;
+    font-weight: bold;
+}
