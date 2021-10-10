@@ -2,53 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
 
-    <title>Kevin - Portfolio</title>
+  <title>Kevin - Portfolio</title>
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
-        <div class="container-xxl">
-          <!-- Page title / brand -->
-          <a href="index.html" class="navbar-brand">
-            <img src="assets/logoHZ.png" alt="logo hz" />
-          </a>
-    
-          <!-- collapsed navbar button (mobile) -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
-            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-    
-          <!-- Navbar links -->
-          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="dashboard.html">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="profile.html">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="faq.html">FaQ</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link highlighted" href="blog.html">Blog</a>
-              </li>
-            </ul>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+    <div class="container-xxl">
+      <!-- Page title / brand -->
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/logoHZ.png" alt="logo hz" />
+      </a>
+
+      <!-- collapsed navbar button (mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FaQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link highlighted" href="blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Big title of Blog page-->
+    <div class="page-title">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10">
+            <h1 id="page-title-text">Blog</h1>
           </div>
         </div>
-      </nav>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+
+    <!-- Blog posts -->
+    <div class="container">
+      <div class="row g4 justify-content-center">
+        <div class="col-md-4">
+
+          <!-- Study Choice blog post -->
+          <div class="card bg-light mb-3">
+            <div class="card-header">Study Choice</div>
+            <div class="card-body">
+              <p class="card-text">
+                I chose HBO-ICT because I have always been interested in how computers and the programs on them work. 
+                I like to find out how the different components work together and to play around with this. 
+                I have also tried to make small games with the help of Youtube tutorials.
+                <br>
+                At the moment it is not entirely clear to me what I am going to do after my studies, 
+                but it will most likely be something within software development or <abbr title="Business IT Consultant">BIC</abbr>.
+                <br>
+                As for how I started at HZ. I have visited several schools including HZ(HBO-ICT) and Avans(Informatica / Technical Informatics) and made some online tests.
+                At first I chose Avans(Informatica), but after a year I decided to start at HZ(HBO-ICT).
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWOT Analyse blog post -->
+        <div class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">SWOT Analyse</div>
+            <div class="card-body">
+              <p class="card-text">
+                Strenghts:
+                <li>perseverance (If I want something, then I try my best to achieve it)</li>
+                <li>Focused (can work for long time on 1 task/assignment)</li>
+                <li>Team player (besides working independently I can also work well in groups)</li>
+                <br>
+
+                Weaknesses:
+                <li>Too focused (too focused on 1 task, sometimes causing me to overlook other (smaller) tasks)</li>
+                <li>Too flexible towards uncooperative group members</li>
+                <br>
+
+                Opportunities:
+                <li>Learning lots in the field of ICT</li>
+                <br>
+
+                Theats:
+                <li>demotivated by group members (If i'm grouped with unmotivated students I tend to be less motivated)</li>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming exprerience blog post -->
+        <div class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">Programming experience</div>
+            <div class="card-body">
+              <p class="card-text">
+                Before I started at HZ I studied for a year at Avans HBO Informatica. There, I made several projects.
+                These projects involved:
+                <li>A website (made with HTML, CSS, JS and Bootstrap).</li>
+                <li>A Windows application written in Java with a MySQL database link.</li>
+                <li>An Android application written in Java where information about movies and series was retrieved and
+                  displayed using an API. (TheMovieDB).</li>
+                <li>An API written in JS, This used Node.js, Npm, Mocha, Chai, MySQL and JWT.</li>
+                <li>A PWA written in Vue.js, PHP, JS and HTML (This was a project for an employer. This project is
+                  online and
+                  can be found at https://www.1t3.nl/).</li>
+                  <br>
+                For many of these projects, we were taught how to work with Git.
+                Besides these project I tried to make a small game in Unity using YouTube tutorials.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- First feedback blog post -->
+        <div class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">First feedback moment</div>
+            <div class="card-body">
+              <p class="card-text">
+                For our first feedback moment, we had to create a website that reflected various information about the course. 
+                We then had to present this website to a group of students and teachers. 
+                The feedback I received on this was mainly from the teachers present. 
+                The feedback I received concerned: 
+                <li>The lack of a blog page</li> 
+                <li>The lack of a progress bar</li>
+                <li>The use of capitals in file names</li>
+                I then applied this feedback to improve my site.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ICT career blog post -->
+        <div class="col-md-4">
+          <div class="card bg-light mb-3">
+            <div class="card-header">ICT career</div>
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
