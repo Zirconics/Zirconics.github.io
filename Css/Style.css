@@ -31,13 +31,13 @@ main > div.carousel {
     color: white;
 }
 
-.intro-subtext-link {
+.text-link-hover {
     color: white;
     text-decoration: underline;
 }
 
-.intro-subtext-link:hover {
-    color: rgb(71, 211, 66);
+.text-link-hover:hover {
+    color: rgb(14, 216, 182);
     transition: 600ms;
 }
 
