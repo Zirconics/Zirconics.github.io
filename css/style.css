@@ -36,6 +36,16 @@ main > div.carousel {
     transition: 600ms;
 }
 
+.text-link-hover-black {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.text-link-hover-black:hover {
+    color: rgb(14, 216, 182);
+    transition: 600ms;
+}
+
 .ListOfItems {
     padding: 60px;
 }
@@ -316,5 +326,10 @@ ul.sidenav-links > li > a:hover {
 .highlighted {
     color: white !important;
     font-weight: bold;
+}
+
+.card-img-top {
+    height: 300px;
+    width: auto;
 }
 
