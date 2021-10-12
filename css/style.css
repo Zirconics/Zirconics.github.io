@@ -333,3 +333,7 @@ ul.sidenav-links > li > a:hover {
     width: auto;
 }
 
+#blog_buttons {
+    margin-bottom: 10px;
+}
+
